@@ -34,7 +34,7 @@ func NewCmd(p *print.Printer) *cobra.Command {
 				`List all STACKIT Git instances`,
 				"$ stackit git instance list"),
 		),
-		RunE: func(cmd *cobra.Command, args []string) error {
+		RunE: func(cmd *cobra.Command, _ []string) error {
 			ctx := context.Background()
 			model, err := parseInput(p, cmd)
 			if err != nil {
