@@ -159,7 +159,7 @@ func outputResult(p *print.Printer, model *inputModel, resp *git.Instance) error
 
 		return nil
 	default:
-		p.Outputf("Created image %q with id %s\n", model.Name, utils.PtrString(model.Id))
+		p.Outputf("Created instance %q with id %s\n", model.Name, utils.PtrString(model.Id))
 		return nil
 	}
 }

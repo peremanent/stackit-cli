@@ -2,6 +2,7 @@ package git
 
 import (
 	"github.com/stackitcloud/stackit-cli/internal/cmd/git/create"
+	"github.com/stackitcloud/stackit-cli/internal/cmd/git/delete"
 	"github.com/stackitcloud/stackit-cli/internal/cmd/git/describe"
 	"github.com/stackitcloud/stackit-cli/internal/cmd/git/list"
 	"github.com/stackitcloud/stackit-cli/internal/pkg/args"
@@ -28,5 +29,6 @@ func addSubcommands(cmd *cobra.Command, p *print.Printer) {
 		list.NewCmd(p),
 		describe.NewCmd(p),
 		create.NewCmd(p),
+		delete.NewCmd(p),
 	)
 }
